@@ -16,6 +16,11 @@ module.exports = function (endpoint) {
           method: 'POST',
           form: {latency: {event_name: eventName, value: latency}},
           json: true
+        },
+        function (error, response, body) {
+          if (error) {
+            console.log('Could not send latency to defined endpoint: ', error.code) // Print the google web page.
+          }
         });
         callback.apply(this, arguments);
       });

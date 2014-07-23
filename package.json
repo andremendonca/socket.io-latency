@@ -1,6 +1,6 @@
 {
   "name": "socket.io-latency",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Calculate latency of socket.io events and send a post to an endpoint",
   "main": "index.js",
   "keywords": [
